@@ -22,7 +22,7 @@ The project was not meant to be a full e-commerce app, but rather a way to *gain
 
 ## Architecture (overview)
 
-![Architecture Diagram](docs/architecture.drawio.png)
+<img src="docs/architecture.drawio.png" alt="Architecture Diagram" width="780">
 
 - **Frontend Layer** → S3 for static files (HTML, CSS, JS), served via CloudFront.  
 - **Application Layer** → API Gateway exposes two REST endpoints; Lambda functions (Python) handle requests (fetch book data + translate description).  
@@ -36,7 +36,7 @@ The project was not meant to be a full e-commerce app, but rather a way to *gain
 
 ## Main Steps
 
-### 1. Frontend Layer
+### 1️. Frontend Layer
 - Created an S3 bucket to host the frontend.  
 - Configured a CloudFront distribution connected to S3, using Origin Access Control (OAC) for secure content delivery.  
 - Built the frontend with HTML + CSS and JavaScript (Fetch API) to call API Gateway endpoints.  
@@ -74,92 +74,74 @@ The project was not meant to be a full e-commerce app, but rather a way to *gain
 
 - **Frontend (JavaScript):**  
   - Uses `fetch()` to interact with API Gateway.  
-  - Displays the original description and translated text when requested.  
+  - Displays the original description and translated text when requested.
 
-👉 Full code is available in the `/lambda/` and `/frontend/` folders of the repository.  
+〰️ Full code is available in the /lambda and /frontend folders of the repository.
+
+
+  
 
 ---
 
 ## Demo & Screenshots
-<br>
-<br>
 
-👉 **S3 Bucket with Static Files**  
-<br>
+⚪ **S3 Bucket with static files** 
 
-![S3 Bucket](docs/s3-static-files.png)
-
-<br>
-<br>
+<img src="docs/s3-static-files.png" alt="S3 Bucket with static files" width="500">
 <br>
 <br>
 <br>
 <br>
 
-👉 **CloudFront Distribution**  
-<br>
-![CloudFront](docs/cloudfront-distribution.png)
-<br>
-<br>
+⚪ **CloudFront Distribution**  
+
+<img src="docs/cloudfront-distribution.png" alt="CloudFront Distribution" width="700">
 <br>
 <br>
 <br>
 <br>
 
-
-👉 **DynamoDB Table – Items Returned**  
+⚪ **DynamoDB Table & Item details**  
+<br>
+<img src="docs/dynanodb-table.png" alt="DynamoDB Table – Items Returned" width="550">
+ 
+<img src="docs/full-item-structure1.png" alt="Full Item Structure 1" width="700">
+<img src="docs/full-item-structure-2.png" alt="Full Item Structure 2" width="700">
+<img src="docs/full-item-structure3.png" alt="Full Item Structure 3" width="700">
+<br>
+<br>
+<br>
 <br>
 
-![DynamoDB Table](docs/dynanodb-table.png)  
-![Full Item Structure ](docs/full-item-structure1.png)  
-![Full Item Structure 2](docs/full-item-structure-2.png)  
-![Full Item Structure 3](docs/full-item-structure3.png)
+⚪ **Lambda Function**   
 <br>
-<br>
+<img src="docs/lambda-function-getbook.png" alt="Lambda Function" width="600">
 <br>
 <br>
 <br>
 <br>
 <br>
 
-👉 **Lambda Function**   
+⚪ **API Gateway Configuration**  
 <br>
-![Lambda](docs/lambda-function-getbook.png)
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-👉 **API Gateway Configuration**  
-<br>
-![API Gateway](docs/apigateway-endpoints.png)
-<br>
+<img src="docs/apigateway-endpoints.png" alt="API Gateway Configuration" width="300">
 <br>
 <br>
 <br>
 <br>
 <br>
 
-👉 **CloudWatch Dashboard**  
+⚪ **CloudWatch Dashboard**  
 <br>
-![CloudWatch](docs/cloudwatch-dashboard.png)
-<br>
-<br>
+<img src="docs/cloudwatch-dashboard.png" alt="CloudWatch Dashboard" width="880">
 <br>
 <br>
 <br>
 <br>
+<br>
+## 📽️ Workflow Demo
 
-
-👉 **Video Demo**
-<br>
-![Watch the demo on Loom](docs/demo-preview.png)  
-<br>
-<br>
-
-https://www.loom.com/share/c6c50f98467145578d10404668236b78?sid=99b3eee1-f67b-4737-ba69-0b5a036cac1b
+[![Watch the Demo on Loom](docs/demo-preview.png)](https://www.loom.com/share/c6c50f98467145578d10404668236b78?sid=99b3eee1-f67b-4737-ba69-0b5a036cac).
 
 ---
 
