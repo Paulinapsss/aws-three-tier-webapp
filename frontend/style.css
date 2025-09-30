@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #7c34af;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #7c34af;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #cebdf0;
+  color: #7c34af;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.results, .translation {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #7c34af;
+  border-radius: 8px;
+}
+
