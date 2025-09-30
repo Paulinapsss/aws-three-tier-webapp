@@ -80,29 +80,79 @@ The project was not meant to be a full e-commerce app, but rather a way to *gain
 ## Demo & Screenshots
 
 👉 **Architecture Diagram**  
-![Architecture](architecture.drawio.png)
+
+
+![Architecture](docs/architecture.drawio.png)
+
+
+
 
 👉 **S3 Bucket with Static Files**  
+
+
 ![S3 Bucket](docs/s3-static-files.png)
 
+
+
+
+
 👉 **CloudFront Distribution**  
+
+
 ![CloudFront](docs/cloudfront-distribution.png)
 
+
+
+
+
+
 👉 **DynamoDB Table – Items Returned**  
-![DynamoDB Items](docs/dynamodb-table.png)  
-[View full item structure](docs/full-item-structure1.png) (docs/full-item-structure2.png) (docs/full-item-structure3.png)
+
+
+
+![DynamoDB Items](docs/dynanodb-table.png)  
+
+
+
+
+[View full item structure](docs/full-item-structure1.png) (docs/full-item-structure-2.png) (docs/full-item-structure3.png)
+
+
+
+
+
 
 👉 **Lambda Function**   
 ![Lambda](docs/lambda-function-getbook.png)
 
+
+
+
+
+
+
 👉 **API Gateway Configuration**  
 ![API Gateway](docs/apigateway-endpoints.png)
+
+
+
+
+
+
 
 👉 **CloudWatch Dashboard**  
 ![CloudWatch](docs/cloudwatch-dashboard.png)
 
+
+
+
+
+
+
 👉 **Video Demo**  
-[![Watch the demo on Loom](docs/demo-preview.png)]([https://www.loom.com/share/tuo-link](https://www.loom.com/share/c6c50f98467145578d10404668236b78?sid=f0b7484f-f789-48e7-9ce2-9e4f90337025))
+![Watch the demo on Loom](docs/demo-preview.png)  
+
+https://www.loom.com/share/c6c50f98467145578d10404668236b78?sid=99b3eee1-f67b-4737-ba69-0b5a036cac1b
 
 ---
 
