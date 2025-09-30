@@ -80,7 +80,7 @@ The project was not meant to be a full e-commerce app, but rather a way to *gain
 ## Demo & Screenshots
 
 👉 **Architecture Diagram**  
-![Architecture](docs/architecture.drawio.png)
+![Architecture](architecture.drawio.png)
 
 👉 **S3 Bucket with Static Files**  
 ![S3 Bucket](docs/s3-static-files.png)
