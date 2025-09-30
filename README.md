@@ -21,12 +21,15 @@ The project was not meant to be a full e-commerce app, but rather a way to *gain
 ---
 
 ## Architecture (overview)
+
+![Architecture Diagram](docs/architecture.drawio.png)
+
 - **Frontend Layer** → S3 for static files (HTML, CSS, JS), served via CloudFront.  
 - **Application Layer** → API Gateway exposes two REST endpoints; Lambda functions (Python) handle requests (fetch book data + translate description).  
 - **Data Layer** → DynamoDB stores the book catalog.  
 - **Supporting services** → Amazon Translate for dynamic translations, CloudWatch for monitoring Lambda and DynamoDB metrics/logs.  
 
-👉 See the architecture diagram in `docs/architecture.drawio.png` (created with draw.io).
+
   
 
 ---
@@ -78,79 +81,83 @@ The project was not meant to be a full e-commerce app, but rather a way to *gain
 ---
 
 ## Demo & Screenshots
-
-👉 **Architecture Diagram**  
-
-
-![Architecture](docs/architecture.drawio.png)
-
-
-
+<br>
+<br>
 
 👉 **S3 Bucket with Static Files**  
-
+<br>
 
 ![S3 Bucket](docs/s3-static-files.png)
 
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 👉 **CloudFront Distribution**  
-
-
+<br>
 ![CloudFront](docs/cloudfront-distribution.png)
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 👉 **DynamoDB Table – Items Returned**  
+<br>
 
-
-
-![DynamoDB Items](docs/dynanodb-table.png)  
-
-
-
-
-[View full item structure](docs/full-item-structure1.png) (docs/full-item-structure-2.png) (docs/full-item-structure3.png)
-
-
-
-
-
+![DynamoDB Table](docs/dynanodb-table.png)  
+![Full Item Structure ](docs/full-item-structure1.png)  
+![Full Item Structure 2](docs/full-item-structure-2.png)  
+![Full Item Structure 3](docs/full-item-structure3.png)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 👉 **Lambda Function**   
+<br>
 ![Lambda](docs/lambda-function-getbook.png)
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 👉 **API Gateway Configuration**  
+<br>
 ![API Gateway](docs/apigateway-endpoints.png)
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 👉 **CloudWatch Dashboard**  
+<br>
 ![CloudWatch](docs/cloudwatch-dashboard.png)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
-
-
-
-
-
-👉 **Video Demo**  
+👉 **Video Demo**
+<br>
 ![Watch the demo on Loom](docs/demo-preview.png)  
+<br>
+<br>
 
 https://www.loom.com/share/c6c50f98467145578d10404668236b78?sid=99b3eee1-f67b-4737-ba69-0b5a036cac1b
 
