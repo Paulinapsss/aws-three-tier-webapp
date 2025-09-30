@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Book Catalog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hello!</h1>
+    <h2>Search for a book and translate the description into your language.</h2>
+  </header>
+
+  <main>
+    <div class="search-bar">
+      <input type="text" id="bookTitle" placeholder="Enter book title">
+      <button onclick="searchBook()">Search</button>
+    </div>
+
+    <div id="results" class="results">
+      <!-- Book data will appear here -->
+    </div>
+
+    <div class="translate-section">
+      <label for="language">Select language:</label>
+      <select id="language">
+        <option value="it">Italian</option>
+        <option value="pl">Polish</option>
+        <option value="ru">Russian</option>
+      </select>
+      <button onclick="translateDescription()">Translate</button>
+    </div>
+
+    <div id="translation" class="translation">
+      <!-- Translated text will appear here -->
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
